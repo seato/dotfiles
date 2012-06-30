@@ -119,4 +119,4 @@ alias cya='reboot'
 alias kthxbai='halt'
 
 #The lovely PATH
-export PATH=$PATH:~/Scripts
+export PATH=$PATH:~/Documents/scripts
