@@ -25,7 +25,7 @@ shopt -s checkwinsize
 # Enable history appending instead of overwriting.  #139609
 shopt -s histappend
 
-# Change the window title of X terminals 
+# Change the window title of X terminals
 case ${TERM} in
 	xterm*|rxvt*|Eterm|aterm|kterm|gnome*|interix)
 		PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/$HOME/~}\007"'
@@ -85,9 +85,12 @@ unset use_color safe_term match_lhssu
 
 alias lstoday="echo ----- Local files modified today -----; find . -maxdepth 1  -daystart -mtime -1 -exec ls -latphd '{}' \;"
 alias brc="emacs ~/.bashrc"
-alias refresh="clear; source ~/.bashrc"
+alias ref="clear; source ~/.bashrc"
 alias emacs="emacs -nw"
 alias ff="firefox &"
+alias l="ls"
+alias docs="cd ~/Documents"
+alias dl="cd ~/Downloads"
 
 # LOL!!1
 
