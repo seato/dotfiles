@@ -91,6 +91,7 @@ alias ff="firefox &"
 alias l="ls"
 alias docs="cd ~/Documents"
 alias dl="cd ~/Downloads"
+alias home="cd ~"
 
 # LOL!!1
 
