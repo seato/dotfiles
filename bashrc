@@ -9,6 +9,7 @@ alias l="ls"
 alias docs="cd ~/Documents"
 alias dl="cd ~/Downloads"
 alias home="cd ~"
+alias foo="clear"
 
 # LOL!!1
 alias wtf='dmesg'
