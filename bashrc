@@ -1,3 +1,43 @@
+# User specific aliases and functions
+
+alias lstoday="echo ----- Local files modified today -----; find . -maxdepth 1  -daystart -mtime -1 -exec ls -latphd '{}' \;"
+alias b="emacs ~/.bashrc"
+alias ref="clear; source ~/.bashrc"
+alias e="emacs -nw"
+alias ff="firefox &"
+alias l="ls"
+alias docs="cd ~/Documents"
+alias dl="cd ~/Downloads"
+alias home="cd ~"
+
+# LOL!!1
+alias wtf='dmesg'
+alias onoz='cat /var/log/errors.log'
+alias rtfm='man'
+
+alias visible='echo'
+alias invisible='cat'
+alias moar='more'
+
+alias icanhas='mkdir'
+alias donotwant='rm'
+alias dowant='cp'
+alias gtfo='mv'
+
+alias hai='cd'
+alias plz='pwd'
+
+alias inur='locate'
+
+alias nomz='ps -aux'
+alias nomnom='killall'
+
+alias cya='reboot'
+alias kthxbai='halt'
+
+#The lovely PATH
+export PATH=$PATH:~/Documents/scripts
+
 # /etc/bash/bashrc
 #
 # This file is sourced by all *interactive* bash shells on startup,
@@ -80,44 +120,3 @@ fi
 
 # Try to keep environment pollution down, EPA loves us.
 unset use_color safe_term match_lhssu
-
-# User specific aliases and functions
-
-alias lstoday="echo ----- Local files modified today -----; find . -maxdepth 1  -daystart -mtime -1 -exec ls -latphd '{}' \;"
-alias brc="emacs ~/.bashrc"
-alias ref="clear; source ~/.bashrc"
-alias emacs="emacs -nw"
-alias ff="firefox &"
-alias l="ls"
-alias docs="cd ~/Documents"
-alias dl="cd ~/Downloads"
-alias home="cd ~"
-
-# LOL!!1
-
-alias wtf='dmesg'
-alias onoz='cat /var/log/errors.log'
-alias rtfm='man'
-
-alias visible='echo'
-alias invisible='cat'
-alias moar='more'
-
-alias icanhas='mkdir'
-alias donotwant='rm'
-alias dowant='cp'
-alias gtfo='mv'
-
-alias hai='cd'
-alias plz='pwd'
-
-alias inur='locate'
-
-alias nomz='ps -aux'
-alias nomnom='killall'
-
-alias cya='reboot'
-alias kthxbai='halt'
-
-#The lovely PATH
-export PATH=$PATH:~/Documents/scripts
