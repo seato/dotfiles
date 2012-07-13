@@ -1,15 +1,10 @@
+;; ===== Remove the startup screen =====
 (custom-set-variables '(inhibit-startup-screen t))
 (custom-set-faces)
+(setq inhibit-startup-message t)
 
 ;; ===== Set the highlight current line minor mode =====
-
-;; In every buffer, the line which contains the cursor will be fully
-;; highlighted
-
 (global-hl-line-mode 1)
-
-;; ===== Disable the startup screen =====
-(setq inhibit-startup-message t)
 
 ;; ===== Enable copy paste with the clipboard =====
 (setq x-select-enable-clipboard t)
@@ -50,9 +45,6 @@
 
 ;; ========== Support Wheel Mouse Scrolling ==========
 (mouse-wheel-mode t)
-
-;; ========== Prevent Emacs from making backup files ==========
-(setq make-backup-files nil)
 
 ;; ===== Linux-style C =====
 (require 'cc-mode)
@@ -103,3 +95,6 @@
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
 (ac-config-default)
+
+;; ===== Remove trailing white space shortcut =====
+(global-set-key "\C-xt" 'delete-trailing-whitespace)
