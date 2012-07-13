@@ -1,15 +1,24 @@
-# User specific aliases and functions
 
+# User specific aliases and functions
 alias lstoday="echo ----- Local files modified today -----; find . -maxdepth 1  -daystart -mtime -1 -exec ls -latphd '{}' \;"
-alias b="emacs ~/.bashrc"
+alias brc="emacs -nw ~/.bashrc"
 alias ref="clear; source ~/.bashrc"
 alias e="emacs -nw"
 alias ff="firefox &"
 alias l="ls"
-alias docs="cd ~/Documents"
+alias r="ruby"
+alias ga="git add"
+alias gc="git commit"
+alias gcm="git commit -m"
+alias gp="git push"
+
+#The lovely PATH
+export PATH=$PATH:~/Documents/scripts
+
+#directory shortcuts
+alias doc="cd ~/Documents"
 alias dl="cd ~/Downloads"
 alias home="cd ~"
-alias foo="clear"
 
 # LOL!!1
 alias wtf='dmesg'
@@ -36,8 +45,8 @@ alias nomnom='killall'
 alias cya='reboot'
 alias kthxbai='halt'
 
-#The lovely PATH
-export PATH=$PATH:~/Documents/scripts
+# RSense
+export RSENSE_HOME=/opt/rsense-0.3
 
 # /etc/bash/bashrc
 #
