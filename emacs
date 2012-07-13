@@ -33,10 +33,10 @@
 ;; ===== Turn off tab character =====
 ;;
 ;; Emacs normally uses both tabs and spaces to indent lines. If you
-;; prefer, all indentation can be made from spaces only. To request this,
-;; set `indent-tabs-mode' to `nil'. This is a per-buffer variable;
-;; altering the variable affects only the current buffer, but it can be
-;; disabled for all buffers.
+;; prefer, all indentation can be made from spaces only. To request
+;; this, set `indent-tabs-mode' to `nil'. This is a per-buffer
+;; variable; altering the variable affects only the current buffer,
+;; but it can be disabled for all buffers.
 ;;
 ;; Use (setq ...) to set value locally to a buffer
 ;; Use (setq-default ...) to set value globally
@@ -80,7 +80,7 @@
             ;;there were errors
             (message "Errors! X[ Press C-x ` to visit")
 
-          ;;no errors, make the compilation window go away in 0.5 seconds
+          ;;no errors, compilation window goes away in 0.5 seconds
           (run-at-time 0.5 nil 'delete-windows-on buf)
           (message "^_^"))))
 
@@ -98,3 +98,21 @@
 
 ;; ===== Remove trailing white space shortcut =====
 (global-set-key "\C-xt" 'delete-trailing-whitespace)
+
+;; ===== Associate markdown-mode with .md files =====
+(autoload 'markdown-mode "markdown-mode.el"
+   "Major mode for editing Markdown files" t)
+(setq auto-mode-alist
+   (cons '("\\.md" . markdown-mode) auto-mode-alist))
+
+;; ===== Marmalade =====
+(require 'package)
+(add-to-list 'package-archives
+    '("marmalade" .
+      "http://marmalade-repo.org/packages/"))
+(package-initialize)
+
+;; ===== Fill-column indicator =====
+(require 'fill-column-indicator)
+(global-set-key "\C-xc" 'fci-mode)
+
