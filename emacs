@@ -31,7 +31,6 @@
 	      show-trailing-whitespace t
 	      initial-major-mode 'text-mode
 	      default-major-mode 'text-mode)
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 ;; ===== Set standard indent to 2 rather that 4 ====
 (setq standard-indent 2)
