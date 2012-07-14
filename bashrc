@@ -1,21 +1,28 @@
-
 # User specific aliases and functions
 alias lstoday="echo ----- Local files modified today -----; find . -maxdepth 1  -daystart -mtime -1 -exec ls -latphd '{}' \;"
 alias brc="emacs -nw ~/.bashrc"
 alias ref="clear; source ~/.bashrc"
 alias e="emacs -nw"
+alias de="emacs -nw ~/.emacs"
 alias ff="firefox &"
 alias l="ls"
 alias r="ruby"
+
+# git-ty up
+alias g="git"
 alias ga="git add"
 alias gc="git commit"
 alias gcm="git commit -m"
 alias gp="git push"
+alias gs="git status"
 
-#The lovely PATH
+# The lovely PATH
 export PATH=$PATH:~/Documents/scripts
 
-#directory shortcuts
+# For solarized to look correct
+export TERM="xterm-256color"
+
+# directory shortcuts
 alias doc="cd ~/Documents"
 alias dl="cd ~/Downloads"
 alias home="cd ~"
@@ -128,5 +135,5 @@ else
 	fi
 fi
 
-# Try to keep environment pollution down, EPA loves us.
+# Try to keep environment pollution down, EPA loves me.
 unset use_color safe_term match_lhssu
