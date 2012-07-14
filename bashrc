@@ -1,12 +1,8 @@
-# User specific aliases and functions
-alias lstoday="echo ----- Local files modified today -----; find . -maxdepth 1  -daystart -mtime -1 -exec ls -latphd '{}' \;"
-alias brc="emacs -nw ~/.bashrc"
-alias ref="clear; source ~/.bashrc"
-alias e="emacs -nw"
-alias de="emacs -nw ~/.emacs"
-alias ff="firefox &"
-alias l="ls"
-alias r="ruby"
+# directory shortcuts
+alias doc="cd ~/Documents"
+alias dl="cd ~/Downloads"
+alias drop="cd ~/Dropbox"
+alias home="cd ~"
 
 # git-ty up
 alias g="git"
@@ -16,16 +12,20 @@ alias gcm="git commit -m"
 alias gp="git push"
 alias gs="git status"
 
+# User specific aliases and functions
+alias ref="clear; source ~/.bashrc"
+alias lstoday="echo ----- Local files modified today -----; find . -maxdepth 1  -daystart -mtime -1 -exec ls -latphd '{}' \;"
+alias brc="emacs -nw ~/.bashrc"
+alias e="emacs -nw"
+alias de="emacs -nw ~/.emacs"
+alias ff="firefox &"
+alias l="ls"
+
 # The lovely PATH
 export PATH=$PATH:~/Documents/scripts
 
 # For solarized to look correct
 export TERM="xterm-256color"
-
-# directory shortcuts
-alias doc="cd ~/Documents"
-alias dl="cd ~/Downloads"
-alias home="cd ~"
 
 # LOL!!1
 alias wtf='dmesg'
