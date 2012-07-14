@@ -26,7 +26,7 @@ That means a lot of the typing tricks you've picked up for emacs will work in yo
 
 It's a very petty reason, and you can easily switch the key-bindings to vi or customize it to something more familiar, but it's a the-more-you-know sort of thing.  
 
-My personal .emacs.d, used with my .emacs that you can find [here](https://github.com/SuitAndThai/dotfiles).
+My personal .emacs, used with my .emacs.d that you can find [here](https://github.com/SuitAndThai/emacs.d).
 
 This was partially influenced by [Magnar's emacs configurations](https://github.com/magnars/.emacs.d).
 
@@ -57,7 +57,7 @@ tell fedora of the new emacs path:
     sudo alternatives --install /usr/bin/emacs emacs /usr/local/emacs24/bin/emacs 20000
     sudo alternatives --install /usr/bin/emacsclient emacsclient /usr/local/emacs24/bin/emacsclient 20000
 
-badda bing badda boom:
+badda bing, badda boom:
 
     emacs
 
