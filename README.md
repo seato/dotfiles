@@ -1,4 +1,4 @@
-# my dot diles
+# my dot files
 
 These are config files that make a system feel right at home for me.
 
@@ -42,7 +42,7 @@ get the latest tarball and extract it:
 
 install the dependencies:
 
-    yum-builddep emacs
+    sudo yum-builddep emacs
 
 configure, build, install:
 
